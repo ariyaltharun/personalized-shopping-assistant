@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 
 
 API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1"
-headers = {"Authorization": f"Bearer st.secrets['API_KEY']"}
+headers = {"Authorization": f"Bearer {st.secrets['API_KEY']}"}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
