@@ -22,7 +22,7 @@ def chat_msg_contanier(content, img=None):
     col2.button("Buy this", type="primary")
 
 
-st.title("Personalized shopping assistance")
+st.title("Bazar Sahayak")
 
 # Initialize chat history
 if "messages" not in st.session_state:
